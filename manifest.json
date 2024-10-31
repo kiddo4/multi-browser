@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Browser Simulator",
+    "version": "1.0",
+    "description": "Simulate different browsers within your current browser",
+    "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback",
+      "tabs",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
